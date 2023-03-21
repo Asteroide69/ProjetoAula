@@ -1,0 +1,275 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Definir larguras em porcentagem */
+body {
+    width: 100%;
+}
+
+/* Definir tamanhos de fonte em unidades flexíveis */
+h1 {
+    font-size: 3em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+/* Adicionar regras de estilo específicas para diferentes tamanhos de tela */
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+}
+
+
+.center{
+    max-width: 1100px;
+    padding:0 2%;
+    display: flex;
+    margin:0 auto;
+}
+
+/* Definir larguras máximas em unidades flexíveis */
+.center {
+    max-width: 90%;
+}
+
+/* Adicionar regras de estilo específicas para diferentes tamanhos de tela */
+@media only screen and (max-width: 600px) {
+    .center {
+        flex-direction: column;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .center {
+        max-width: 100%;
+        margin: 0;
+    }
+}
+
+
+header{
+    background-color: rgba(0,0,0,0.6)
+}
+
+.logo{
+    margin-top:2px;
+    color: #000000;
+}
+
+/* Adicionar regras de estilo específicas para diferentes tamanhos de tela */
+@media only screen and (max-width: 600px) {
+    .logo {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .logo {
+        font-size: 1em;
+    }
+}
+
+.button {
+  all: unset;
+  cursor: pointer;
+  outline: revert;
+}
+
+/* Adicionar regras de estilo específicas para diferentes tamanhos de tela */
+@media only screen and (max-width: 600px) {
+  .button {
+    padding: 10px;
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .button {
+    padding: 8px;
+    font-size: 1em;
+  }
+}
+
+
+.menu-container{
+    width:100%;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-container a.active-menu{
+    background-color:#696969;
+}
+
+.menu-container a{
+    display: inline-block;
+    margin:0 10px;
+    text-decoration: none;
+    line-height: 50px;
+    padding:0px 10px;
+    transition: 0.8s;
+    color: #FFFFFF
+}
+
+/* Adicionar regras de estilo específicas para diferentes tamanhos de tela */
+@media only screen and (max-width: 600px) {
+    .menu-container a {
+        margin: 0;
+        padding: 0;
+        line-height: normal;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-container a.active-menu {
+        background-color: transparent;
+    }
+}
+section.main{
+    min-height: 800px;
+    background-image: url("gym2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.text-chamada{
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.text-chamada h1{
+    font-size: 40px;
+}
+
+@media (max-width: 768px) {
+  .text-chamada h1 {
+    font-size: 30px;
+  }
+}
+
+
+section.produtos{
+    background-image: url("gym.png");
+    min-height: 790px
+    background-size: cover;
+    background-position: center;
+    padding: 1px 0;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+section.produtos h3 {
+    border: 1px solid white;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+    text-align: center;
+}
+section.produtos {
+    background-image: url("gym.png");
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    padding: 1px 0;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+section.planos h3 {
+    border: 1px solid white;
+    width: 100%;
+    margin: auto;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+}
+
+section.produtos p {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+
+.carousel-container {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel img {
+  width: 25%;
+  margin: 0 5px;
+}
+
+
+@media (max-width: 768px) {
+  .carousel img {
+    width: 50%;
+  }
+}
+
+.botao-redondo {
+  border-radius: 50%;
+  width: 200px;
+  height: 100px;
+  background-color: #696969;
+  color: #FFFFFF;
+  font-size: 20px;
+  border: none;
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 100%;
+  width: 200px;
+  height: 100px;
+  background-color: #696969;
+  color: #FFFFFF;
+  font-size: 20px;
+  border: none;
+}
+
+section.endpage{
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+

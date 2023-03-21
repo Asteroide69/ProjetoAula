@@ -1,0 +1,360 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Definir larguras em porcentagem */
+body {
+    width: 100%;
+}
+
+/* Definir tamanhos de fonte em unidades flexíveis */
+h1 {
+    font-size: 3em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+/* Adicionar regras de estilo específicas para diferentes tamanhos de tela */
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+}
+
+
+.center{
+    max-width: 1100px;
+    padding:0 2%;
+    display: flex;
+    margin:0 auto;
+}
+
+/* Definir larguras máximas em unidades flexíveis */
+.center {
+    max-width: 90%;
+}
+
+/* Adicionar regras de estilo específicas para diferentes tamanhos de tela */
+@media only screen and (max-width: 600px) {
+    .center {
+        flex-direction: column;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .center {
+        max-width: 100%;
+        margin: 0;
+    }
+}
+
+
+header{
+    background-color: rgba(0,0,0,0.6)
+}
+
+.logo{
+    margin-top:2px;
+    color: #000000;
+}
+
+/* Adicionar regras de estilo específicas para diferentes tamanhos de tela */
+@media only screen and (max-width: 600px) {
+    .logo {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .logo {
+        font-size: 1em;
+    }
+}
+
+.button {
+  all: unset;
+  cursor: pointer;
+  outline: revert;
+}
+
+/* Adicionar regras de estilo específicas para diferentes tamanhos de tela */
+@media only screen and (max-width: 600px) {
+  .button {
+    padding: 10px;
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .button {
+    padding: 8px;
+    font-size: 1em;
+  }
+}
+
+
+.menu-container{
+    width:100%;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-container a.active-menu{
+    background-color:#696969;
+}
+
+.menu-container a{
+    display: inline-block;
+    margin:0 10px;
+    text-decoration: none;
+    line-height: 50px;
+    padding:0px 10px;
+    transition: 0.8s;
+    color: #FFFFFF
+}
+
+/* Adicionar regras de estilo específicas para diferentes tamanhos de tela */
+@media only screen and (max-width: 600px) {
+    .menu-container a {
+        margin: 0;
+        padding: 0;
+        line-height: normal;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-container a.active-menu {
+        background-color: transparent;
+    }
+}
+section.main{
+    min-height: 800px;
+    background-image: url("gym5.png");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.text-chamadaa {
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media screen and (max-width: 768px) {
+    /* ajuste de posição para telas menores que 768px de largura */
+    .text-chamadaa {
+        bottom: 10%;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* ajuste de posição para telas menores que 480px de largura */
+    .text-chamadaa {
+        bottom: 15%;
+        font-size: 14px;
+    }
+}
+
+
+.text-chamadaa h1{
+    font-size: 40px;
+}
+
+@media (max-width: 768px) {
+  .text-chamadaa h1 {
+    font-size: 30px;
+  }
+}
+
+
+.text-chamada{
+    position: absolute;
+    bottom: -100px;
+    left: 300px;
+    transform: translateX(-50%);
+}
+
+.text-chamada h1{
+    color: black;
+    font-size: 40px;
+}
+
+.textin{
+    position: absolute;
+    bottom: -210px;
+    left: 485px;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+  .text-chamada h1 {
+    font-size: 30px;
+  }
+}
+
+
+.produtos {
+  display: flex;
+  justify-content: center;
+}
+
+section.produtos{
+    background-image: url("gym.png");
+    min-height: 790px
+    background-size: cover;
+    background-position: center;
+    padding: 1px 0;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+section.produtos h3 {
+    border: 1px solid white;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+    text-align: center;
+}
+section.produtos {
+    background-image: url("gym.png");
+    min-height: 820px;
+    background-size: cover;
+    background-position: center;
+    padding: 1px 0;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.retangulo {
+  background: rgba(0, 0, 0, 0.7);
+  height: 401px;
+  width: 100%;
+}
+
+.new {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 120px;
+  max-width: 960px;
+  width: 100%;
+}
+
+.imagem {
+  position: absolute;
+  top: 805px;
+  right: 0;
+  height: 50%;
+}
+
+.carousel-container {
+  position: absolute;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  height: 50%;
+  width: 50%;
+  top: 1220px;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .carousel-slide {
+    width: 900%;
+  }
+}
+
+/* Adiciona o efeito de deslocamento */
+.carousel-slide:nth-of-type(1) {
+  transform: translateX(0%);
+}
+
+.carousel-slide:nth-of-type(2) {
+  transform: translateX(-100%);
+}
+
+.carousel-slide:nth-of-type(3) {
+  transform: translateX(-200%);
+}
+
+/* Configura a animação */
+.carousel-slide {
+  animation: slide 5s infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  20% {
+    transform: translateX(0%);
+  }
+  33.33% {
+    transform: translateX(-100%);
+  }
+  53.33% {
+    transform: translateX(-100%);
+  }
+  66.66% {
+    transform: translateX(-200%);
+  }
+  86.66% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+
+section.endpage{
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
